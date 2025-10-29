@@ -1,0 +1,29 @@
+{
+  "metrics": {
+    "people_worked": 42350,
+    "persondays": 120000,
+    "avg_wage": 315.0,
+    "women_percent": 42.0,
+    "payments_pending_percent": 12.0
+  },
+  "comparisons": {
+    "people_delta_text": "+8% vs last month",
+    "people_status": "good",
+    "persondays_delta_text": "+5% vs state avg",
+    "persondays_status": "good",
+    "wage_delta_text": "+3% vs state avg",
+    "wage_status": "good",
+    "payments_delta_text": "12% pending (worse)",
+    "payments_status": "bad"
+  },
+  "summary": "In September 2024, Nagpur provided work to 42,350 families — 8% more than last month. Average wage ₹315/day. 12% payments pending.",
+  "trend": [
+    { "month": "2024-04", "value": 90000 },
+    { "month": "2024-05", "value": 95000 },
+    { "month": "2024-06", "value": 100000 },
+    { "month": "2024-07", "value": 105000 },
+    { "month": "2024-08", "value": 110000 },
+    { "month": "2024-09", "value": 120000 }
+  ],
+  "lastUpdated": "2024-10-15T06:00:00Z"
+}
