@@ -22,13 +22,27 @@ export default function TrendChart({ dataPoints = [] }){
     ]
   };
   const options = {
-    plugins: { legend: { display: false } },
-    scales: { x: { display: true }, y: { display: true } },
-    maintainAspectRatio: false,
-  };
+  plugins: { legend: { display: false } },
+  scales: {
+    x: { display: true, grid: { display: false } },
+    y: { 
+      display: true,
+      ticks: {
+        callback: function(value){ return new Intl.NumberFormat('en-IN').format(value); }
+      },
+      grid: { color: '#eee' }
+    }
+  },
+  elements: {
+    point: { radius: 4 },
+    line: { borderWidth: 2 }
+  },
+  maintainAspectRatio: false,
+};
+
 
   return (
-    <div className="bg-white p-3 rounded-lg shadow h-48">
+    <div className="bg-white p-3 rounded-lg shadow h-48 w-150">
       <h4 className="font-medium mb-2">Workdays over time</h4>
       <Line data={data} options={options} />
     </div>
